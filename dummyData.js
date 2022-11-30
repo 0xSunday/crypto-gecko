@@ -128,6 +128,6 @@ export function filteredCoins(dateFilter) {
 }
 
 export function getcoinById(id) {
-  console.log(id);
+ 
   return dummyCoins.find((coin) => coin.id === id);
 }
