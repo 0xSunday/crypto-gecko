@@ -21,16 +21,16 @@ const ListItem = (props) => {
               <p>Price</p>
             </div>
             <div>
-              <h3>${price}</h3>
+              <h4>${price}</h4>
             </div>
           </div>
 
           <div className={classes.address}>
             <div>
-              <p>Total Market Cap</p>
+              <p>Market Cap</p>
             </div>
             <div>
-              <h3>${marketCap}</h3>
+              <h4>${marketCap}</h4>
             </div>
           </div>
         </div>
