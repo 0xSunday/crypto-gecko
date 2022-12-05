@@ -3,7 +3,7 @@ import classes from "./coinList.module.css";
 import ListItem from "./ListItem";
 const CoinList = (props) => {
   const { items } = props;
-  
+
   return (
     <ul className={classes.list}>
       {items.map((coins) => (

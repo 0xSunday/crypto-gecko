@@ -35,7 +35,7 @@ const ListItem = (props) => {
           </div>
         </div>
         <div className={classes.actions}>
-          <Button link={exploreLink}>
+          <Button link={exploreLink} className={classes.Button}>
             Explore
             <AiOutlineArrowRight className={classes.icon} />
           </Button>
