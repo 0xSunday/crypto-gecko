@@ -8,10 +8,11 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 const ListItem = (props) => {
   const { id, title, price, marketCap, image } = props;
 
-  const exploreLink = `/events/${id}`;
+  const exploreLink = `/coins/${id}`;
   return (
     <li className={classes.item}>
       <img src={"/" + image} alt={title} />
+
 
       <div className={classes.content}>
         <div className={classes.summary}>

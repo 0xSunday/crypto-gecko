@@ -9,7 +9,7 @@ function MainHeader() {
         <Link href="/">Crypto Gecko</Link>
       </div>
       <nav className={classes.navigation}>
-        <Link className={classes.link} href="/events">
+        <Link className={classes.link} href="/coins">
           All Coins
           <FaBitcoin className={classes.icon} />
         </Link>

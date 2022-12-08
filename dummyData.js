@@ -11,6 +11,7 @@ const dummyCoins = [
     totalSupply: "21,000,000",
     website: "bitcoin.org",
     creator: "Satoshi Nakamoto",
+    logo: "logo/bitcoinLogo.png",
     image: "images/bitcoinImage.png",
     isFeatured: true,
   },
@@ -26,6 +27,7 @@ const dummyCoins = [
     totalSupply: "120,519,279",
     website: "etheruem.org",
     creator: "Vitalik Buterin and co.",
+    logo: "logo/ethereumLogo.png",
     image: "images/ethereumImage.png",
     isFeatured: true,
   },
@@ -41,6 +43,7 @@ const dummyCoins = [
     totalSupply: "534,627,677",
     website: "solana.com",
     creator: "Anatoly Yakovenko and co.",
+    logo: "logo/solanaLogo.png",
     image: "images/solanaImage.png",
     isFeatured: true,
   },
@@ -56,6 +59,7 @@ const dummyCoins = [
     totalSupply: "163,276,974",
     website: "binance.com",
     creator: "Changpeng Zhao",
+    logo: "logo/BNBLogo.png",
     image: "images/bnbImage.png",
     isFeatured: false,
   },
@@ -71,6 +75,7 @@ const dummyCoins = [
     totalSupply: "10,000,000,000",
     website: "polygon.technology",
     creator: "sandeep narval",
+    logo: "logo/maticLogo.png",
     image: "images/maticImage.png",
     isFeatured: false,
   },
@@ -87,6 +92,7 @@ const dummyCoins = [
     totalSupply: "1,000,000,000",
     website: "chain.link",
     creator: "Sergey Nazarov",
+    logo: "logo/linkLogo.png",
     image: "images/chainLinkImage.png",
     isFeatured: false,
   },
@@ -103,6 +109,7 @@ const dummyCoins = [
     totalSupply: "1,256,132,259",
     website: "polkadot.network",
     creator: "Gavin Wood",
+    logo: "logo/polkadotLogo.png",
     image: "images/polkaDotImage.png",
     isFeatured: false,
   },
@@ -128,6 +135,6 @@ export function filteredCoins(dateFilter) {
 }
 
 export function getcoinById(id) {
- 
   return dummyCoins.find((coin) => coin.id === id);
 }
+

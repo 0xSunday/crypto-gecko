@@ -10,6 +10,7 @@ const CoinList = (props) => {
         <ListItem
           key={coins.id}
           id={coins.id}
+          logo={coins.logo}
           image={coins.image}
           title={coins.title}
           price={coins.price}
