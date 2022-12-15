@@ -1,16 +1,15 @@
 import React from "react";
 import { getEventById } from "../../dummyData";
 import { useRouter } from "next/router";
-// import CoinDetailsPage from "../../components/coinDetails/CoinDetailsPage";
+import CoinDetailsPage from "../../components/coinDetails/CoinDetailsPage";
 const coinDetails = () => {
   const router = useRouter();
 
   const coinId = router.query.eventId;
   const coin = getEventById(coinId);
-  // console.log(coin.circulatingSupply);
+
   return (
-    // <h1>hello</h1>
-    <coinDetailsPage
+    <CoinDetailsPage
       shotName={coin.shotName}
       title={coin.title}
       description={coin.description}
