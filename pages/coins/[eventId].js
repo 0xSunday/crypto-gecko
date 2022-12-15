@@ -1,27 +1,27 @@
 import React from "react";
-import coinDetailsPage from "../../components/coinDetails/coinDetailsPage";
-import { getcoinById } from "../../dummyData";
+import getEventById from "../../dummyData";
 import { useRouter } from "next/router";
-
+// import CoinDetailsPage from "../../components/coinDetails/CoinDetailsPage";
 const coinDetails = () => {
   const router = useRouter();
 
   const coinId = router.query.eventId;
-  const coin = getcoinById(coinId);
-  // console.log(coin);
+  const coin = getEventById(coinId);
+  // console.log(coin.circulatingSupply);
   return (
+    // <h1>hello</h1>
     <coinDetailsPage
-      // shotName={coin.shotName}
+      shotName={coin.shotName}
       title={coin.title}
-      // description={coin.description}
-      // price={coin.price}
-      // marketCap={coin.marketCap}
-      // circulatingSupply={coin.circulatingSupply}
-      // totalSupply={coin.totalSupply}
-      // website={coin.website}
-      // creator={coin.creator}
-      // logo={coin.logo}
-      // image={coin.image}
+      description={coin.description}
+      price={coin.price}
+      marketCap={coin.marketCap}
+      circulatingSupply={coin.circulatingSupply}
+      totalSupply={coin.totalSupply}
+      website={coin.website}
+      creator={coin.creator}
+      logo={coin.logo}
+      image={coin.image}
     />
   );
 };

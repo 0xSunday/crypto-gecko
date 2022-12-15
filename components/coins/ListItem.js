@@ -1,8 +1,9 @@
 import Link from "next/link";
 import React from "react";
-import Button from "../ui/Button";
+import Button from "../ui/button";
 import classes from "./ListItem.module.css";
 
+import Image from "next/image";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 const ListItem = (props) => {
@@ -11,8 +12,7 @@ const ListItem = (props) => {
   const exploreLink = `/coins/${id}`;
   return (
     <li className={classes.item}>
-      <img src={"/" + image} alt={title} />
-
+      <img src={image} alt={title}  />
 
       <div className={classes.content}>
         <div className={classes.summary}>
