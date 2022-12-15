@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import classes from "./Button.module.css";
+import classes from "./button.module.css";
 const Button = (props) => {
   if (props.link) {
     return (

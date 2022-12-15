@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import classes from "./mainHeader.module.css";
-import { FaBitcoin } from "react-icons/Fa";
+import { FaBitcoin } from "react-icons/fa";
 function MainHeader() {
   return (
     <header className={classes.header}>
