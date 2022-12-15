@@ -1,5 +1,5 @@
 import React from "react";
-import getEventById from "../../dummyData";
+import { getEventById } from "../../dummyData";
 import { useRouter } from "next/router";
 // import CoinDetailsPage from "../../components/coinDetails/CoinDetailsPage";
 const coinDetails = () => {

@@ -136,5 +136,4 @@ export function filteredCoins(dateFilter) {
 
 export function getEventById(id) {
   return dummyCoins.find((event) => event.id === id);
-  console.log(id);
 }
