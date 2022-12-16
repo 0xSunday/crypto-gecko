@@ -1,5 +1,5 @@
 import React from "react";
-// import CoinDetailsPage from "../../components/coinDetails/CoinDetailsPage";
+import CoinDetailsPage from "../../components/coinDetails/CoinDetailsPage";
 import { getEventById } from "../../dummyData";
 import { useRouter } from "next/router";
 
@@ -19,20 +19,19 @@ const coinDetails = () => {
   }
 
   return (
-    <h1>hello</h1>
-    // <CoinDetailsPage
-    //   shotName={coin.shotName}
-    //   title={coin.title}
-    //   description={coin.description}
-    //   price={coin.price}
-    //   marketCap={coin.marketCap}
-    //   circulatingSupply={coin.circulatingSupply}
-    //   totalSupply={coin.totalSupply}
-    //   website={coin.website}
-    //   creator={coin.creator}
-    //   logo={coin.logo}
-    //   image={coin.image}
-    // />
+    <CoinDetailsPage
+      shotName={coin.shotName}
+      title={coin.title}
+      description={coin.description}
+      price={coin.price}
+      marketCap={coin.marketCap}
+      circulatingSupply={coin.circulatingSupply}
+      totalSupply={coin.totalSupply}
+      website={coin.website}
+      creator={coin.creator}
+      logo={coin.logo}
+      image={coin.image}
+    />
   );
 };
 
