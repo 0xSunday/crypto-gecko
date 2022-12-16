@@ -1,6 +1,7 @@
 import React from "react";
 import { getEventById } from "../../dummyData";
 import { useRouter } from "next/router";
+// import CoinDetailsPage from "../../components/coinDetails/CoinDetailsPage";
 import CoinDetailsPage from "../../components/coinDetails/CoinDetailsPage";
 const coinDetails = () => {
   const router = useRouter();
@@ -19,7 +20,6 @@ const coinDetails = () => {
   }
 
   return (
-  
     <CoinDetailsPage
       shotName={coin.shotName}
       title={coin.title}
