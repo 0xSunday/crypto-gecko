@@ -6,9 +6,20 @@ const coinDetails = () => {
   const router = useRouter();
 
   const coinId = router.query.eventId;
+  // console.log(coinId);
   const coin = getEventById(coinId);
+  // console.log(coin);
+  // console.log(coin.shotName);
+  if (!coin) {
+    return (
+      // <ErrorAlert>
+      <p>event is not found</p>
+      // </ErrorAlert>
+    );
+  }
 
   return (
+  
     <CoinDetailsPage
       shotName={coin.shotName}
       title={coin.title}
