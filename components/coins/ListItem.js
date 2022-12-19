@@ -16,7 +16,7 @@ const ListItem = (props) => {
 
       <div className={classes.content}>
         <div className={classes.summary}>
-          <h2>{title}</h2>
+          <h2 >{title}</h2>
           <div className={classes.date}>
             <div>
               <p>Price</p>

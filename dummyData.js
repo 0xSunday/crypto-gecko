@@ -61,7 +61,7 @@ const DUMMY_EVENTS = [
     creator: "Changpeng Zhao",
     logo: "logo/BNBLogo.png",
     image: "images/bnbImage.png",
-    isFeatured: false,
+    isFeatured: true,
   },
   {
     id: "e5",
@@ -77,7 +77,7 @@ const DUMMY_EVENTS = [
     creator: "sandeep narval",
     logo: "logo/maticLogo.png",
     image: "images/maticImage.png",
-    isFeatured: false,
+    isFeatured: true,
   },
 
   {
@@ -94,7 +94,7 @@ const DUMMY_EVENTS = [
     creator: "Sergey Nazarov",
     logo: "logo/linkLogo.png",
     image: "images/chainLinkImage.png",
-    isFeatured: false,
+    isFeatured: true,
   },
 
   {
